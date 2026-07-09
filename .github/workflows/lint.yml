@@ -1,0 +1,19 @@
+name: Lint Markdown
+
+on:
+  push:
+      branches: [ main, master]
+  pull_request:
+      branches: [ main, master]
+
+jobs:
+    markdown-lint:
+      runs-on: ubuntu-latest
+      steps:
+      -name: Checkout code
+       uses: actions/checkout@v4
+
+      -name: Lint Markdown
+       uses: DavidAnson/github-changelog-action@v1
+       with: 
+         files: '**/*.md'
