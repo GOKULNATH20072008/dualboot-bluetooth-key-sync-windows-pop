@@ -1,0 +1,15 @@
+```gitignore
+# Virtual environments
+bt-venv/
+venv/
+__pycache__/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+```
